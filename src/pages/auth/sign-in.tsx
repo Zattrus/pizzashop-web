@@ -21,8 +21,6 @@ export function SignIn() {
   } = useForm<SignInForm>()
 
   async function handleSignIn(data: SignInForm) {
-    console.log(data)
-
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000))
 
